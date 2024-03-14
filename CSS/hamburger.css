@@ -1,0 +1,241 @@
+/* Author: Khaw Chan Yin */
+
+@font-face {
+  font-family: Nunito;
+  src: url(../font-family/NunitoSans-Regular.ttf);
+}
+
+header {
+  width: 100%;
+  font-family: Nunito, sans-serif;
+  font-weight: bold;
+  position: relative;
+  z-index: 10;
+}
+
+
+h1#logo {
+  font-family: monospace;
+  font-size: 2em;
+  text-align: center;
+  color: white;
+  background-color: #111;
+  padding-bottom: 2px;
+  padding-top: 2px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #111;
+
+}
+
+/* nav */
+li.nav-item {
+  list-style: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar {
+  min-height: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+
+}
+
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+
+}
+
+.nav-link {
+  transition: 0.7s;
+}
+
+.nav-link:hover {
+  color: grey;
+  text-decoration: underline;
+}
+
+.navbar ul li:hover .sub-menu-1 ul li a:hover {
+  color: grey;
+  text-decoration: underline;
+}
+
+.nav-menu {
+  display: none;
+}
+
+/* outside hamburger*/
+/* nav */
+li.nav-itemB {
+  list-style: none;
+}
+
+.navbarB {
+  min-height: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+
+}
+
+
+.nav-menuB {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+
+}
+
+.nav-linkB {
+  transition: 0.7s;
+}
+
+.nav-linkB:hover {
+  color: grey;
+}
+
+
+/* outside hamburger */
+/* submenu */
+.sub-menu-1B {
+  display: none;
+
+}
+
+.navbar ul li:hover .sub-menu-1B {
+  display: block;
+  position: absolute;
+  background-color: black;
+  margin-top: 0px;
+  margin-left: -15px;
+
+}
+
+.navbar ul li:hover .sub-menu-1B ul {
+  display: block;
+  margin: 10px;
+
+}
+
+.navbar ul li:hover .sub-menu-1B ul li {
+  width: 150px;
+  padding: 10px;
+  border-bottom: 1px dotted #fff;
+  background: transparent;
+  border-radius: 0;
+  text-align: left;
+
+}
+
+.navbar ul li:hover .sub-menu-1B ul li:last-child {
+  border-bottom: none;
+}
+
+.navbar ul li:hover .sub-menu-1B ul li a:hover {
+  color: grey;
+}
+
+/* hamburger */
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+@media(max-width:600px) {
+  h1#logo {
+    font-family: monospace;
+    font-size: 2em;
+    text-align: center;
+    color: white;
+    background-color: #111;
+    padding-bottom: 2px;
+    padding-top: 2px;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: fixed;
+    Left: -100%;
+    top: 40px;
+    gap: 0;
+    flex-direction: column;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    display: block;
+  }
+
+  .nav-item {
+    margin: 16px 0;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-menuB {
+    display: none;
+
+  }
+
+  .sub-menu-1 {
+    display: block;
+  }
+
+
+}
+
+.Icon {
+  width: 35px;
+  height: 5%;
+  float: right;
+  margin-right: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}

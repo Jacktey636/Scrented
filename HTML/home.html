@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="keywords" content="perfume, candle, diffuse, essential oil" />
+  <title>Scented</title>
+  <link href="../CSS/reset.css" rel="stylesheet">
+  <link href="../CSS/style.css" rel="stylesheet">
+  <link href="../CSS/slideShow.css" rel="stylesheet">
+  <link href="../CSS/hamburger.css" rel="stylesheet">
+  <script src="../Javascript/hamburger.js" defer></script>
+  <script src="../Javascript/slideShow.js" defer></script>
+  <script src="../Javascript/store.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1 id="logo">S C E N T E D</h1>
+    <nav class="navbar">
+      <!-- outside hamburger -->
+      <ul class="nav-menuB">
+        <li class="nav-itemB"><a href="../HTML/home.html" class="nav-linkB">Home</a></li>
+        <li class="nav-itemB"><a href="../HTML/Perfume.html" class="nav-linkB">Product</a>
+          <div class="sub-menu-1B">
+            <ul>
+              <li class="nav-item"><a href="../HTML/Perfume.html">Perfume</a></li>
+              <li class="nav-item"><a href="../HTML/Diffuser.html">Diffuser</a></li>
+              <li class="nav-item"><a href="../HTML/ScentedCandle.html">Scented Candle</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-itemB"><a href="../HTML/bundle.html" class="nav-linkB">Bundle</a></li>
+        <li class="nav-itemB"><a href="../HTML/ourStory.html" class="nav-linkB">About Us</a>
+          <div class="sub-menu-1B">
+            <ul>
+              <li class="nav-item"><a href="../HTML/ourStory.html">Our Story</a></li>
+              <li class="nav-item"><a href="../HTML/ContactUs.html">Contact Us</a></li>
+              <li class="nav-item"><a href="../HTML/FaQs.html">FAQs</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-itemB"><a href="../HTML/feedback.html" class="nav-linkB">Feedback</a>
+          <div class="sub-menu-1B">
+            <ul>
+              <li class="nav-item"><a href="../HTML/feedback.html">Feedback Form</a></li>
+              <li class="nav-item"><a href="../HTML/Rate.html">Rating Form</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <!-- inside hamburger -->
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="../HTML/home.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="../HTML/Perfume.html" class="nav-link">Product</a>
+          <div class="sub-menu-1">
+            <ul>
+              <li><a href="../HTML/Perfume.html">Perfume</a></li>
+              <li><a href="../HTML/Diffuser.html">Diffuser</a></li>
+              <li><a href="../HTML/ScentedCandle.html">Scented Candle</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item"><a href="#" class="nav-link">Gift</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">About</a>
+          <div class="sub-menu-1">
+            <ul>
+              <li><a href="../HTML/ourStory.html">Our Story</a></li>
+              <li><a href="../HTML/ContactUs.html">Contact Us</a></li>
+              <li><a href="../HTML/FaQs.html">FAQs</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item"><a href="#" class="nav-link">Feedback</a>
+          <div class="sub-menu-1">
+            <ul>
+              <li><a href="../HTML/feedback.html">Feedback Form</a></li>
+              <li><a href="../HTML/Rate.html">Rating Form</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+
+    </nav>
+  </header>
+  <div id="containerOurStory">
+    <img src="../banner/banner4.jpg" alt="">
+    <div class="centered">
+      <h3 class="story"><span class="tab"></span>Welcome Home To Scented</h3>
+      <!--&nbsp is to add space -->
+      <p class="story">Curated aromatic experiences Designed for you</p>
+      <span class="tab2"></span>
+      <button class="btn" type="button" target="_blank" onclick="ourStory.html"><a href="../HTML/ourStory.html">Our Story</a></button>
+    </div>
+  </div>
+
+  <div class="space">
+    <div class="containerProduct">
+      <div class="column2">
+        <!--width, height-->
+        <div class="column2-1">
+          <a onclick="filterSelection('all')" href="../HTML/Perfume.html"><img src="../banner/PerfumePro.jpg" alt="Perfume" class="product"></a>
+          <div class="top-left1">
+            <h2 class="proName Title">Scented Perfume</h2>
+            <p class="proDes Description">Last Long Perfume Based With Yours Interest</p>
+          </div>
+        </div>
+        <!--942,388-->
+        <div class="column2-2">
+          <a onclick="filterSelection('all')" href="../HTML/ScentedCandle.html"><img src="../banner/CandlePro.jpg" alt="Scented Candle" class="product"></a>
+          <div class="top-left1">
+            <h2 class="proName">Scented Candle<br /></h2>
+            <p class="proDes">Scents Inspired By Your Favourite Cities</p>
+          </div>
+        </div>
+        <!--942,556-->
+      </div>
+      <div class="column4">
+        <div class="column4-1">
+          <a onclick="filterSelection('all')" href="../HTML/Diffuser.html"><img src="../banner/DiffuserPro.jpg" alt="Reed Diffuser" class="product"></a>
+          <div class="top-left1">
+            <h2 class="proName">Reed Diffusers<br /></h2>
+            <p class="proDes">Infused With Premium Essential Oils</p>
+          </div>
+        </div>
+        <div class="column4-2">
+          <a href="../HTML/bundle.html"><img src="../banner/BundlePro.jpg" alt="Bundle" class="product"></a>
+          <div class="top-left1">
+            <h2 class="proName">Scented Bundle</h2>
+            <p class="proDes">Enjoy Greater Value From Our Bundles</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <br/>
+  <div class="boxNews">
+    <form name="News" method="get" action="../HTML/home.html">
+      <div class="containerNews">
+
+        <h2 class="Title">Subscribe to our Newsletter</h2>
+        <p class="Desc">Get Access To Exclusive Promotions & New Product Launches</p>
+
+        <input type="email" placeholder="Email address" name="mail" class="Decoration" required>
+        <label>
+          <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
+        </label>
+        <label>
+          <input type="checkbox" checked="checked" name="subscribe"> Monthly Newsletter
+        </label>
+        <input type="submit" value="Subscribe" style="font-size: 1em;">
+      </div>
+    </form>
+  </div>
+
+  </nav>
+  <img src="../banner/2SCENTED-CANDLES1-facebookJumbo.jpg" alt="">
+  <h2 class="Title">Top Selled Product</h2>
+  <div class="TopProducts">
+    <div class="container">
+      <div class="item">
+        <div class="img"><img src="../Product img/scanted candle/Aery Fernweh Candle - Aztec Tuberose.png" alt=""> </div>
+        <div class="caption">
+          <h3 class="Title">Aery Fernweh Candle - Aztec Tuberose</h3>
+          <ul>
+            <li>Top notes - Almond Milk and Peach.</li>
+            <li>Middle notes - Iris and Rose.</li>
+            <li>Base notes - Tuberose Tonka Bean and Amber.</li>
+            <li>Burn Time: 50 hour</li>
+        </ul>
+        </div>
+      </div>
+      <div class="item">
+        <div class="img"><img src="../Product img/diffuser/Uplifting Aromatherapy Reed Diffuser.png"  alt=""> </div>
+        <div class="caption">
+          <h3 class="Title">Uplifting Aromatherapy Reed Diffuser</h3>
+          <ul>
+            <li>Naturally uplifting aroma</li>
+            <li>100% natural fragrance with organic essential oils</li>
+            <li>Lasts up to 12 weeks under normal conditions</li>
+        </ul>
+        </div>
+      </div>
+      <div class="item">
+        <div class="img"><img src="../Product img/perfume/CHANEL N°1 DE CHANEL L_EAU ROUGE.png" alt=""> </div>
+        <div class="caption">
+          <h3 class="Title">N°1 DE CHANEL L'EAU ROUGE</h3>
+          <ul>
+            <li>contains 97% naturally derived ingredients.</li>
+            <li>opens with a fruity (citrus and red berries) flourish of energy that unfurls into a jasmine-rose heart</li>
+        </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="Customer">
+    <h2 class="custTitle Title">What our customer says</h1>
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <h1>""</h1>
+          <p class="comment">Recommended by my friend. Super surprised with the scent that lingers around. Way better
+            than many bigger brands out ther. Will definitely to back to get more</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <h1> ""</h1>
+          <p class="comment">"I love almost everything about this candle! The scent is very classy like a hotel scent. I
+            expected it to smelllike bath and body works but I was surprised!"
+          </p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <h1>""</h1>
+          <p class="comment">"I love the smell and the packaging of the candles! The wick is indeed special - it has the
+            subtle crackling sound and hardly emits soot. So much better than other brands." </p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <h1>""</h1>
+          <p class="comment">"smells super good and super pretty flowers 😍 love it, bought all scents to try since i
+            always loved scented diffusers."
+          </p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <br />
+
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <img id="slideShow" src="../banner/readDiffuser.jpg" style="width:100%">
+      <div class="centered">
+        <span class="tab"></span>
+        <p>How To Use Reed Diffuser</p>
+        <br />
+        <span class="tab"></span>
+        <button id="btnSlideShow"><a href="SlideShow.html">Read More</a></button>
+      </div>
+    </div>
+
+    <div class="mySlides fade">
+      <img id="slideShow" src="../banner/BestCandle.jpg" style="width:100%">
+      <div class="centered">
+        <p>Why Scented Is The Best Scented Seller Maker</p>
+        <br />
+        <span class="tab3"></span>
+        <button id="btnSlideShow"><a href="SlideShow.html">Read More</a></button>
+      </div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+  </div>
+
+</body>
+
+<footer class="footerContainer">
+  <div class="F1-4">
+      <h6>Main Menu</h6> <br />
+      <ol class="none">
+          <li><a href="../HTML/home.html">Home</a></li>
+          <li><a href="../HTML/Perfume.html">Product</a></li>
+          <li><a href="../HTML/bundle.html">Bundle</a></li>
+          <li><a href="../HTML/feedback.html">Feedback</a></li>
+          <li><a href="../HTML/FaQs.html">FAQs</a></li>
+          <li><a href="../HTML/ContactUs.html">Contact US</a></li>
+      </ol>
+  </div>
+  <div class="F1-4">
+      <h6>Follow US Here</h6> <br />
+      <ol class="none">
+          <li><a href="https://www.facebook.com/profile.php?id=100009892892174">Facebook</a></li>
+          <li> <a href="https://www.instagram.com/scentedofficialstore/">Instagram</a></li>
+          <li><a href="https://twitter.com/cangfeng4">Twitter</a></li>
+          <li><a href="mailto:scented@gmail.com">Email</a></li>
+      </ol>
+  </div>
+  <div class="F1-4">
+      <h6>Learn More</h6> <br />
+      <ol class="none">
+          <li><a href="../HTML/ourStory.html">Our Story</a></li>
+          <li><a href="../HTML/reedDiffuser.html">How to use reed diffuser</a></li>
+          <li><a href="../HTML/whyScented.html">Why "Scented"</a></li>
+      </ol>
+
+  </div>
+  <div class="F1-4">
+      <h6>Find Us Here</h6> <br />
+      <ol class="none">
+          <li>Our Address </li>
+          <li>209, Taman Kinabalu, Jalan 12, 52200 Selangor</li>
+        
+      </ol>
+  </div>
+</footer>
+
+</html>

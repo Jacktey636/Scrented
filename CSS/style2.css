@@ -1,0 +1,366 @@
+/* Author: Tey Jia Lerk */
+
+@charset "utf-8";
+/* Story, How, Why Page */
+div.contentContainer{
+    text-align: justify;
+    width: auto;
+    height: auto;
+}
+
+img.background {
+    margin-left: auto;
+    
+}
+
+div.background{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+h2.title{
+    font-size: 25px;
+    position: absolute;
+    color: black;
+    background-color: white;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-width: 20px;
+    
+}
+
+h2.text{
+    font-size: 18px;
+    text-align: center;
+    line-height: 2;
+}
+h4.text{
+    font-size: 16px;
+    text-align: center;
+}
+
+h6.text,
+p.text {
+    text-align: justify;
+    margin-left: 10%;
+    font-size: 15px;
+    line-height: 1.4;
+    margin-left: 12%;
+    margin-right: 12%;
+    
+}
+
+img {
+    margin-left:10%;
+    margin-bottom: 10px ;
+    margin-top: 10px ;
+}
+
+div.contentContainer div.content {
+    padding: 0 30px;
+    max-width: 710px;
+    margin: 40px auto 0;
+    margin-bottom: 2%;
+}
+
+ol.Commitment{
+    list-style-type: none;
+    text-align: center;
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* FAQ */
+/* Style the buttons that are used to open and close the accordion panel */
+
+div.fourty {
+  width: 50%;
+  margin-left: 5%;
+  margin-bottom: 5%;
+  float: left;
+}
+
+div.sixty {
+  width: 40%;
+  float: right;
+}
+
+div.fourty::after {
+  clear: both;
+}
+
+div.dropUsContainer {
+  width: 80%;
+  background-color: gray;
+  color: white;
+}
+
+div.dropUsContainer h3 {
+  width: 90%;
+  margin-left: 5%;
+  font-size: 1em;
+  line-height: 2;
+  text-align: center;
+}
+
+
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  font-size: 1.1em;
+  font-family: monospace, sans-serif;
+  font-weight: bold;
+}
+
+div.panel p.quest,
+div.panel ol.faq {
+  font-size: 0.9em;
+  font-family: cursive, 'Times New Roman', Times, sans-serif;
+}
+
+div.dropUsContainer h3{
+  font-family: monospace, sans-serif;
+  font-size: large;
+}
+
+.active,
+.accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.accordion:after {
+  content: '\02795';
+  /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.accordion.active::after {
+  content: "\2796";
+  /* Unicode character for "minus" sign (-) */
+}
+
+p.quest {
+  font-size: 18px;
+  text-align: left;
+  line-height: 2;
+}
+
+ol.faq li {
+  margin-left: 2%;
+  line-height: 2;
+}
+
+img.why {
+  padding-left: 50px;
+}
+
+/* Contact Us Form */
+div.containerContact {
+  width: 100%;
+}
+
+div.column1-2Left {
+  width: 49.5%;
+  float: left;
+}
+
+div.column1-2Right {
+  width: 49.5%;
+  float: right;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+input[type=text]#name {
+  width: 104%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 10px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  width: 10%;
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 25%;
+}
+
+input[type=reset] {
+  width: 10%;
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 0%;
+}
+
+input[type=submit]:hover,
+input[type=reset]:hover {
+  background-color: gray;
+}
+
+.ContactUSFormContainer {
+  border-radius: 5px;
+  position: relative;
+  padding: 20px;
+}
+
+.column1-2Right div.contact {
+  margin-top: 55px;
+}
+
+
+div.contact h2,
+div.contact p a
+{
+text-decoration: none;
+cursor: pointer;
+line-height: 1.5;
+font-size: 1.2em;
+color: black;
+}
+
+div.contact p {
+  line-height: 2; 
+  font-family: 'Times New Roman', Times, serif;
+}
+
+div.contact p a:hover
+{
+color: grey;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.vl {
+  position: absolute;
+  border-left: 3px solid black;
+  height: 430px;
+  margin-left: 52%;
+}
+
+div.inforamation {
+  position: absolute;
+  width: 40%;
+  float: right;
+}
+
+/* LiveChat */
+.openButton {
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  background-color: rgba(128,128,128,0.8);
+  border-radius: 100px;
+}
+
+.popUp {
+  display: none;
+  position: fixed;
+  bottom: 14%;
+  right: 3%;
+}
+
+@media only screen and (min-width: 600px) and (max-width:1000px) {
+  input[type=reset] {
+    width: 30%;
+  }
+
+  input[type=submit] {
+    width:30%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  img {
+    max-width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  
+  input[type=reset] {
+    width: 20%;
+
+  }
+
+  input[type=submit] {
+    width:20%;
+  }
+
+  .col-25,
+  .col-75 {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  div.column1-2Left {
+    width: 100%;
+    float: left;
+  }
+  
+  div.column1-2Right {
+    width: 100%;
+    float: right;
+  }
+}

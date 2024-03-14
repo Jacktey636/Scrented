@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="keywords" content="perfume, candle, diffuse, essential oil" />
+  <title>Scented</title>
+  <link href="../CSS/reset.css" rel="stylesheet">
+  <link href="../CSS/style.css" rel="stylesheet">
+  <link href="../CSS/style2.css" rel="stylesheet">
+  <link href="../CSS/hamburger.css" rel="stylesheet">
+  <script src="../Javascript/hamburger.js" defer></script>
+
+</head>
+
+<body>
+
+  <header>
+    <h1 id="logo">S C E N T E D</h1>
+    <nav class="navbar">
+      <!-- outside hamburger -->
+      <ul class="nav-menuB">
+        <li class="nav-itemB"><a href="../HTML/home.html" class="nav-linkB">Home</a></li>
+        <li class="nav-itemB"><a href="../HTML/Perfume.html" class="nav-linkB">Product</a>
+          <div class="sub-menu-1B">
+            <ul>
+              <li class="nav-item"><a href="../HTML/Perfume.html">Perfume</a></li>
+              <li class="nav-item"><a href="../HTML/Diffuser.html">Diffuser</a></li>
+              <li class="nav-item"><a href="../HTML/ScentedCandle.html">Scented Candle</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-itemB"><a href="../HTML/bundle.html" class="nav-linkB">Bundle</a></li>
+        <li class="nav-itemB"><a href="../HTML/ourStory.html" class="nav-linkB">About Us</a>
+          <div class="sub-menu-1B">
+            <ul>
+              <li class="nav-item"><a href="../HTML/ourStory.html">Our Story</a></li>
+              <li class="nav-item"><a href="../HTML/ContactUs.html">Contact Us</a></li>
+              <li class="nav-item"><a href="../HTML/FaQs.html">FAQs</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-itemB"><a href="../HTML/feedback.html" class="nav-linkB">Feedback</a>
+          <div class="sub-menu-1B">
+            <ul>
+              <li class="nav-item"><a href="../HTML/feedback.html">Feedback Form</a></li>
+              <li class="nav-item"><a href="../HTML/Rate.html">Rating Form</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <!-- inside hamburger -->
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="../HTML/home.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="../HTML/Perfume.html" class="nav-link">Product</a>
+          <div class="sub-menu-1">
+            <ul>
+              <li><a href="../HTML/Perfume.html">Perfume</a></li>
+              <li><a href="../HTML/Diffuser.html">Diffuser</a></li>
+              <li><a href="../HTML/ScentedCandle.html">Scented Candle</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item"><a href="#" class="nav-link">Gift</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">About</a>
+          <div class="sub-menu-1">
+            <ul>
+              <li><a href="../HTML/ourStory.html">Our Story</a></li>
+              <li><a href="../HTML/ContactUs.html">Contact Us</a></li>
+              <li><a href="../HTML/FaQs.html">FAQs</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item"><a href="#" class="nav-link">Feedback</a>
+          <div class="sub-menu-1">
+            <ul>
+              <li><a href="../HTML/feedback.html">Feedback Form</a></li>
+              <li><a href="../HTML/Rate.html">Rating Form</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+
+    </nav>
+  </header>
+
+  <div class="content">
+    <h2 class="text">About Us / Contact Us</h2> <br />
+    <h2 class="text">Scented</h2> <br />
+  </div>
+  <div class="containerContact"></div>
+  <div class="ContactUSFormContainer column1-2Left">
+    <form name="contactUS" id="contactUS" action="get">
+      <div class="row">
+        <div class="col-25">
+          <label for="name">Full Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="Email">Email</label>
+        </div>
+        <div class="col-75">
+          <input type="email" id="email" name="email" placeholder="Your email" required>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="Main">Main Text</label>
+        </div>
+        <div class="col-75">
+          <textarea id="Main" name="Main" placeholder="Your Questions or Problem" style="height:200px"
+            required></textarea>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+      </div>
+    </form>
+
+  </div>
+  <div class="column1-2Right">
+    <div class="contact">
+      <h2>Way to contact us</h2>
+      <p><a href="mailto:scented@gmail.com">scented@gmail.com</a> </p>
+      <p><a href="tel:+601120696465">+60 11 2069 6465</a></p>
+      <p><a href="https://wa.me/60197760682?text=I'm%20interested%20in%20your%20product" target="_bank">
+          whatsapp me</a> </p>
+      <br />
+    </div>
+  </div>
+  <button onclick="openForm()"><img src="../banner/livechat.png" class="openButton"></button>
+  <div class="popUp" id="liveChat">
+    <iframe
+    allow="microphone;"
+    width="350"
+    height="430"
+    src="https://console.dialogflow.com/api-client/demo/embedded/80be1224-5d61-4fd4-b806-62faabfee3bd">
+</iframe>
+  </div>
+  <script>
+    function openForm() {
+      var form = document.getElementById("liveChat");
+      if (form.style.display == "none") {
+        form.style.display = "block";
+      } else {
+        form.style.display = "none";
+      }
+    }
+  </script>
+
+</body>
+
+<footer class="footerContainer">
+  <div class="F1-4">
+    <h6>Main Menu</h6> <br />
+    <ol class="none">
+      <li><a href="../HTML/home.html">Home</a></li>
+      <li><a href="../HTML/Perfume.html">Product</a></li>
+      <li><a href="../HTML/bundle.html">Bundle</a></li>
+      <li><a href="../HTML/feedback.html">Feedback</a></li>
+      <li><a href="../HTML/FaQs.html">FAQs</a></li>
+      <li><a href="../HTML/ContactUs.html">Contact US</a></li>
+    </ol>
+  </div>
+  <div class="F1-4">
+    <h6>Follow US Here</h6> <br />
+    <ol class="none">
+      <li><a href="https://www.facebook.com/profile.php?id=100009892892174">Facebook</a></li>
+      <li> <a href="https://www.instagram.com/scentedofficialstore/">Instagram</a></li>
+      <li><a href="https://twitter.com/cangfeng4">Twitter</a></li>
+      <li><a href="mailto:scented@gmail.com">Email</a></li>
+    </ol>
+  </div>
+  <div class="F1-4">
+    <h6>Learn More</h6> <br />
+    <ol class="none">
+      <li><a href="../HTML/ourStory.html">Our Story</a></li>
+      <li><a href="../HTML/reedDiffuser.html">How to use reed diffuser</a></li>
+      <li><a href="../HTML/whyScented.html">Why "Scented"</a></li>
+    </ol>
+
+  </div>
+  <div class="F1-4">
+    <h6>Find Us Here</h6> <br />
+    <ol class="none">
+      <li>Our Address </li>
+      <li>209, Taman Kinabalu, Jalan 12, 52200 Selangor</li>
+
+    </ol>
+  </div>
+</footer>
+
+</html>
